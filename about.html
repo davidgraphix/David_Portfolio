@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Smart About</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!---------ABOUT------------>
+    <div id="about">
+        <div class="container">
+            <nav>
+                <img src="./images/david_logo.png" class="logo">
+                 <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Service</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>         
+                 </ul>
+                 <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/me.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About-Me</h1>
+                    <p>
+                        My Name is David.. <br> I'm a Software Developer and Graphic Designer
+                    </p>
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents actice-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic Design</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Website Development</li>
+                            <li><span>App Development</span><br>Building Andriod/IOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Web Development Training at Abiola Soft </li>
+                            <li><span>2022 - 2023</span><br> Started Learning Software Developing</li>
+                            <li><span>2021 - 2022</span><br>Desktop Publishing at Wordsoft Computer Ent</li>
+                            <li><span>2020 - 2021</span><br>Graphic Design and Art</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>UI/UX Design Training at ET Institute.</li>
+                            <li><span>2020</span><br>AISSS from OKO AFO BDG.Lagos.</li>
+                            <li><span>2017</span><br>LAPS from IPR B.Lagos.</li>
+                            <li><span>2014</span><br>SGM from BDG. Lagos</li>
+                        </ul>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © David <span>Smart Soft</span> 2023</p>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
